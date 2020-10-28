@@ -29,16 +29,44 @@ public class Main {
 //        }
 
         //nested Loop
-//        for (int i = 0 ; i <= 5; i++){
-//            for (int j = 0; j <=5; j++){
-//                if (j <= 5-i && j <= i || j >= i && j >= 5-i){
-//                    System.out.println("*");
+        for (int i = 0 ; i <= 10; i++){
+            for (int j = 0; j <= 10; j++ ){
+                //+X
+//                if (i == j || (i+j) == 10 || i == 5 || j == 5){
+//                    System.out.print("* ");
 //                }else {
-//                    System.out.println("-");
+//                    System.out.print("- ");
 //                }
-//            }
-//            System.out.println("\n");
-//        }
+
+                //sgitiga kri kanan
+//                if ((j + i) <= 10 && j <= i || j >= i && (j + i) >= 10){
+//                    System.out.print("* ");
+//                }else{
+//                    System.out.print("- ");
+//                }
+
+                //sgitiga atas bawah
+//                if ((i + j) <= 10 && i <= j || (i+j) >= 10 && i >= j){
+//                    System.out.print("* ");
+//                }else {
+//                    System.out.print("- ");
+//                }
+
+                //sgitiga atas bawah garis datar tengah
+                if ((i + j) <= 10 && i <= j || i == 5 || (i+j) >= 10 && i >= j){
+                    System.out.print("* ");
+                    //tambah - kebawah
+                    if (j == 4 || j == 5){
+                        System.out.print("- ");
+//                        break;
+                    }
+                }else {
+                    System.out.print("- ");
+                }
+
+            }
+            System.out.print("\n");
+        }
 
         //latihan loop sederhana
 //
@@ -71,8 +99,8 @@ public class Main {
         //f1 = n1 = f-1 + f-2... f1 = 1
         //
         int fn, fn_1,fn_2, n;
-        System.out.println("fibonacci ke - ");
-        n = input.nextInt();
+//        System.out.println("fibonacci ke - ");
+//        n = input.nextInt();
         fn_2 = 0;
         fn_1 = 1;
         fn = 1;
