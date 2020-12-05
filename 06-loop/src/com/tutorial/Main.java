@@ -31,7 +31,7 @@ public class Main {
         //nested Loop
         for (int i = 0 ; i <= 10; i++){
             for (int j = 0; j <= 10; j++ ){
-                //+X
+//                //+X
 //                if (i == j || (i+j) == 10 || i == 5 || j == 5){
 //                    System.out.print("* ");
 //                }else {
@@ -39,11 +39,11 @@ public class Main {
 //                }
 
                 //sgitiga kri kanan
-//                if ((j + i) <= 10 && j <= i || j >= i && (j + i) >= 10){
-//                    System.out.print("* ");
-//                }else{
-//                    System.out.print("- ");
-//                }
+                if ((j + i) <= 10 && j <= i || j >= i && (j + i) >= 10){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("- ");
+                }
 
                 //sgitiga atas bawah
 //                if ((i + j) <= 10 && i <= j || (i+j) >= 10 && i >= j){
@@ -53,16 +53,16 @@ public class Main {
 //                }
 
                 //sgitiga atas bawah garis datar tengah
-                if ((i + j) <= 10 && i <= j || i == 5 || (i+j) >= 10 && i >= j){
-                    System.out.print("* ");
-                    //tambah - kebawah
-                    if (j == 4 || j == 5){
-                        System.out.print("- ");
-//                        break;
-                    }
-                }else {
-                    System.out.print("- ");
-                }
+//                if ((i + j) <= 10 && i <= j || i == 5 || (i+j) >= 10 && i >= j){
+//                    System.out.print("* ");
+//                    //tambah - kebawah
+//                    if (j == 4 || j == 5){
+//                        System.out.print("- ");
+////                        break;
+//                    }
+//                }else {
+//                    System.out.print("- ");
+//                }
 
             }
             System.out.print("\n");
